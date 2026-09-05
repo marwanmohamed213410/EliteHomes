@@ -33,7 +33,7 @@
               <a
                 class="nav-link active fw-semibold"
                 aria-current="page"
-                href="#"
+                href="#home"
                 >Home</a
               >
             </li>
@@ -73,6 +73,145 @@
       </div>
     </nav>
     <!-- end nav bar -->
+    <!-- start hero section -->
+    <header id="home" class="py-20 vh-100">
+      <div
+        class="container d-flex justify-content-center align-items-center flex-column"
+      >
+        <div class="hero-content text-center text-white">
+          <h1 class="fs-20 fw-bold">Find Your Dream Home</h1>
+          <p class="max-w mx-auto header-disc my-4">
+            Discover exceptional properties in prime locations. From modern
+            condos to luxury estates, we help you find the perfect place to call
+            home.
+          </p>
+          <div
+            class="property-search bg-white p-3 rounded-4 text-black w-60 text-center mx-auto mt-5"
+          >
+            <div class="container">
+              <form class="row g-3">
+                <!-- loction input -->
+                <div class="col-12 col-md-6">
+                  <label for="location" class="form-label">Location</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-white text-muted ps-3 pe-2"
+                      ><i class="fa-solid fa-location-dot text-body-tertiary"></i
+                    ></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="location"
+                      name="location"
+                      placeholder="Enter city, neighborhood, or ZIP code"
+                    />
+                  </div>
+                </div>
+  
+                <!-- property type input -->
+                <div class="col-md-3">
+                  <label for="property-type" class="form-label"
+                    >Property Type</label
+                  >
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="property-type"
+                  >
+                    <option selected>All Types</option>
+                    <option value="House">House</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Condo">Condo</option>
+                    <option value="Townhouse">Townhouse</option>
+                  </select>
+                </div>
+  
+                <!-- Price Range -->
+                <div class="col-md-3">
+                  <label for="price-range" class="form-label">Price Range</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="price-range"
+                  >
+                    <option selected>Any Price</option>
+                    <option value="start-500">$0 - $500K</option>
+                    <option value="above-500-to-1m">$500K - $1M</option>
+                    <option value="above-1m-to-2m">$1M - $2M</option>
+                    <option value="above-2m">$2M+</option>
+                  </select>
+                </div>
+  
+                <!-- Bedrooms -->
+                <div class="col-md-3">
+                  <label for="bedrooms" class="form-label">Bedrooms</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="bedrooms"
+                  >
+                    <option selected>Any</option>
+                    <option value="one">1+</option>
+                    <option value="two">2+</option>
+                    <option value="three">3+</option>
+                    <option value="four">4+</option>
+                    <option value="five">5+</option>
+                  </select>
+                </div>
+  
+                <!-- Bathrooms -->
+                <div class="col-md-3">
+                  <label for="bathrooms" class="form-label">Bathrooms</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                    id="bedrooms"
+                  >
+                    <option selected>Any</option>
+                    <option value="one">1+</option>
+                    <option value="two">2+</option>
+                    <option value="three">3+</option>
+                    <option value="four">4+</option>
+                  </select>
+                </div>
+  
+                <!-- Min Sq Ft -->
+                <div class="col-md-3">
+                  <label for="sq" class="form-label">Min Sq Ft</label>
+                  <input
+                    type="number"
+                    class="form-control custom-input"
+                    id="sq"
+                    name="mini-sq"
+                    placeholder="1,000"
+                  />
+                </div>
+  
+                <!-- Min Sq Ft -->
+                <div class="col-md-3">
+                  <label for="x-sq" class="form-label">Min Sq Ft</label>
+                  <input
+                    type="number"
+                    class="form-control custom-input"
+                    id="x-sq"
+                    name="max-sq"
+                    placeholder="5,000"
+                  />
+                </div>
+  
+                <!-- search button -->
+                <div class="col-md-12">
+                  <button class="btn purble-btn w-100 py-3 fs-18">
+                    <i class="fa-solid fa-magnifying-glass mx-2"></i>
+                    Search Properties
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end hero section -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
