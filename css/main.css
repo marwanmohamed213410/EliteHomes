@@ -1,14 +1,101 @@
 @font-face {
-    font-family: EXO-bold, sans-serif;
-    src: url(../webfonts/Exo-Bold.ttf) format('truetype');
+  font-family: EXO-bold, sans-serif;
+  src: url(../webfonts/Exo-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: EXO-X-bold, sans-serif;
-    src: url(../webfonts/Exo-ExtraBold.ttf) format('truetype');
+  font-family: EXO-X-bold, sans-serif;
+  src: url(../webfonts/Exo-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: EXO-Regular, sans-serif;
-    src: url(../webfonts/Exo-Regular.ttf) format('truetype');
+  font-family: EXO-Regular, sans-serif;
+  src: url(../webfonts/Exo-Regular.ttf) format("truetype");
 }
+
+:root {
+  --main-color: #59168c;
+  --main-color-RGB: rgb(89, 22, 140);
+  --main-font-color: #ffffff;
+  --main-font-color-RGB: rgb(255, 255, 255);
+  --pargraph-font-color: #4a5565;
+  --pargraph-font-color-RGB: rgb(74, 85, 101);
+  --muted-color: #1d293d;
+  --paragraph-fw: 400;
+  --section-heading-fw: 900;
+  --radius: 0.5rem;
+  --radius-card: 0.75rem;
+  --main-font: sans-serif;
+  --spacing: 0.25rem;
+  --nav-active-color: #7c3aed;
+  --nav-under-line: #8651f3;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--muted-color);
+}
+
+/* start navbar */
+.bg-body-tertiary {
+  background-color: #ffffff !important;
+}
+
+.navbar .navbar-brand {
+  color: var(--muted-color);
+}
+
+.navbar .nav-item .nav-link.active {
+  color: var(--nav-active-color);
+}
+
+.navbar .nav-item .nav-link.active {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0.313rem;
+  left: 0;
+  background-color: var(--nav-under-line);
+}
+
+.navbar .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0.313rem;
+  left: 0;
+  background-color: var(--nav-under-line);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar .nav-item .nav-link:hover {
+  color: var(--nav-active-color);
+}
+
+
+.nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .navbar-nav .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+  width: fit-content;
+  color: var(--muted-color);
+}
+
+/* end navbar */

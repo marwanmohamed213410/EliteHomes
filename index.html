@@ -4,13 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EliteHomes - Your Dream Home Awaits</title>
-    <link rel="shortcut icon" href="images/property.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/property.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <!-- start nav bar -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary py-3 px-3 fixed-top border-bottom shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-4" href="#">EliteHomes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto fw-medium fs-6 lh-base fw-medium">
+            <li class="nav-item mx-3">
+              <a
+                class="nav-link active fw-semibold"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item mx-3 dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Properties
+                <i class="fa-solid fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Testimonials</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
