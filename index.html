@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <!-- start nav bar -->
@@ -74,7 +75,7 @@
     </nav>
     <!-- end nav bar -->
     <!-- start hero section -->
-    <header id="home" class="py-20 vh-100">
+    <header id="home" class="py-20 vh-170">
       <div
         class="container d-flex justify-content-center align-items-center flex-column"
       >
@@ -86,34 +87,36 @@
             home.
           </p>
           <div
-            class="property-search bg-white p-3 rounded-4 text-black w-60 text-center mx-auto mt-5"
+            class="property-search bg-white p-3 rounded-4 text-black mx-auto mt-5"
           >
             <div class="container">
               <form class="row g-3">
                 <!-- loction input -->
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-12 col-xl-6 py-1">
                   <label for="location" class="form-label">Location</label>
                   <div class="input-group">
                     <span class="input-group-text bg-white text-muted ps-3 pe-2"
-                      ><i class="fa-solid fa-location-dot text-body-tertiary"></i
+                      ><i
+                        class="fa-solid fa-location-dot text-body-tertiary"
+                      ></i
                     ></span>
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control py-3"
                       id="location"
                       name="location"
                       placeholder="Enter city, neighborhood, or ZIP code"
                     />
                   </div>
                 </div>
-  
+
                 <!-- property type input -->
-                <div class="col-md-3">
+                <div class="col-12 col-md-12 col-xl-3 py-1">
                   <label for="property-type" class="form-label"
                     >Property Type</label
                   >
                   <select
-                    class="form-select"
+                    class="form-select py-3"
                     aria-label="Default select example"
                     id="property-type"
                   >
@@ -124,12 +127,14 @@
                     <option value="Townhouse">Townhouse</option>
                   </select>
                 </div>
-  
+
                 <!-- Price Range -->
-                <div class="col-md-3">
-                  <label for="price-range" class="form-label">Price Range</label>
+                <div class="col-12 col-md-12 col-xl-3 py-1">
+                  <label for="price-range" class="form-label"
+                    >Price Range</label
+                  >
                   <select
-                    class="form-select"
+                    class="form-select py-3"
                     aria-label="Default select example"
                     id="price-range"
                   >
@@ -140,12 +145,12 @@
                     <option value="above-2m">$2M+</option>
                   </select>
                 </div>
-  
+
                 <!-- Bedrooms -->
-                <div class="col-md-3">
+                <div class="col-6 col-md-6 col-xl-3 py-1">
                   <label for="bedrooms" class="form-label">Bedrooms</label>
                   <select
-                    class="form-select"
+                    class="form-select py-3"
                     aria-label="Default select example"
                     id="bedrooms"
                   >
@@ -157,12 +162,12 @@
                     <option value="five">5+</option>
                   </select>
                 </div>
-  
+
                 <!-- Bathrooms -->
-                <div class="col-md-3">
+                <div class="col-6 col-md-6 col-xl-3 py-1">
                   <label for="bathrooms" class="form-label">Bathrooms</label>
                   <select
-                    class="form-select"
+                    class="form-select py-3"
                     aria-label="Default select example"
                     id="bedrooms"
                   >
@@ -173,33 +178,33 @@
                     <option value="four">4+</option>
                   </select>
                 </div>
-  
+
                 <!-- Min Sq Ft -->
-                <div class="col-md-3">
+                <div class="col-6 col-md-6 col-xl-3 py-1">
                   <label for="sq" class="form-label">Min Sq Ft</label>
                   <input
                     type="number"
-                    class="form-control custom-input"
+                    class="form-control custom-input py-3"
                     id="sq"
                     name="mini-sq"
                     placeholder="1,000"
                   />
                 </div>
-  
+
                 <!-- Min Sq Ft -->
-                <div class="col-md-3">
-                  <label for="x-sq" class="form-label">Min Sq Ft</label>
+                <div class="col-6 col-md-6 col-xl-3 py-1">
+                  <label for="x-sq" class="form-label">Max Sq Ft</label>
                   <input
                     type="number"
-                    class="form-control custom-input"
+                    class="form-control custom-input py-3"
                     id="x-sq"
                     name="max-sq"
                     placeholder="5,000"
                   />
                 </div>
-  
+
                 <!-- search button -->
-                <div class="col-md-12">
+                <div class="col-md-12 py-1">
                   <button class="btn purble-btn w-100 py-3 fs-18">
                     <i class="fa-solid fa-magnifying-glass mx-2"></i>
                     Search Properties

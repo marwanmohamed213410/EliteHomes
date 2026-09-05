@@ -29,7 +29,7 @@
   --spacing: 0.25rem;
   --nav-active-color: #7c3aed;
   --nav-under-line: #8651f3;
-  --btn-pg-color: #8320FD;
+  --btn-pg-color: #8320fd;
   --btn-pg-color-RGP: rgb(131, 32, 253);
 }
 
@@ -55,8 +55,8 @@ body {
   max-width: 40.313rem;
 }
 
-.vh-150 {
-  height: 150vh;
+.vh-170 {
+  height: 170vh;
 }
 
 /* start navbar */
@@ -127,16 +127,16 @@ header {
   background-image:
     linear-gradient(to right, #4d179acc, #59168bcc),
     url(../images/hero-bg-img.png);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header-disc {
-    font-weight: 400;
-    line-height: 33px;
-    font-size: 20px;
-    color: oklch(0.928 0.006 264.531);
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 20px;
+  color: oklch(0.928 0.006 264.531);
 }
 
 .input-group .input-group-text {
@@ -148,23 +148,27 @@ header {
 }
 
 .form-select {
-    --bs-form-select-bg-img: none;
+  --bs-form-select-bg-img: none;
 }
 
 .purble-btn {
   background-color: var(--btn-pg-color);
   color: white;
-  transition: all .3s cubic-bezier(.4,0,.2,1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .purble-btn:hover {
-  background-color: oklch(49.6% .265 301.924);
+  background-color: oklch(49.6% 0.265 301.924);
   color: white;
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    color: white;
-    background-color: oklch(49.6% .265 301.924);;
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: white;
+  background-color: oklch(49.6% 0.265 301.924);
 }
 
 .fs-18 {
@@ -180,5 +184,30 @@ header {
 
 .w-60 {
   width: 60%;
+}
+
+.form-select:focus,
+.form-control:focus { 
+  border-color: #000;
+  outline: 3px solid #7c3aed;
+  outline-offset: 2px; 
+  box-shadow: none;
+}
+
+.input-group .form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.input-group:focus-within {
+  outline: 3px solid #7c3aed;
+  outline-offset: 2px;
+  border-radius: 0.375rem;
+}
+
+.input-group:focus-within .input-group-text,
+.input-group:focus-within .form-control {
+  border-color: #000;
 }
 /* end hero section */
