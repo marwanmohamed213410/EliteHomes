@@ -1,5 +1,6 @@
 @media (min-width: 992px) {
-  .property-search {
+  .property-search,
+  .rating {
     width: 65%;
   }
 }

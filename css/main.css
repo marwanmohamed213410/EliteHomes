@@ -38,8 +38,8 @@ body {
   color: var(--muted-color);
 }
 
-.py-20 {
-  padding-block: calc(var(--spacing) * 20);
+.mt-25 {
+  margin-top: calc(var(--spacing) * 25);
 }
 
 .py-25 {
@@ -53,10 +53,6 @@ body {
 
 .max-w {
   max-width: 40.313rem;
-}
-
-.vh-170 {
-  height: 170vh;
 }
 
 /* start navbar */
@@ -210,4 +206,20 @@ header {
 .input-group:focus-within .form-control {
   border-color: #000;
 }
+
+.rating span {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.rating p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
 /* end hero section */
+
+/* start property section */
+
+/* end property section */
