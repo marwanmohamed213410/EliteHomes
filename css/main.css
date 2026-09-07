@@ -45,6 +45,16 @@ body::selection {
   background-color: #a684ff;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.row.contact-row {
+  display: flex;
+  gap: 15px;
+}
+
 .mt-25 {
   margin-top: calc(var(--spacing) * 25);
 }
@@ -718,6 +728,9 @@ section#properties {
 }
 /* end client stories section */
 /* start faq section */
+section#faq {
+  background-color: #f9fafb;
+}
 #faq .header-title {
   color: #7f21fd;
 }
@@ -746,7 +759,7 @@ accordion-header button:hover {
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
-  color:#101828;
+  color: #101828;
 }
 
 .accordion-button:focus {
@@ -759,7 +772,108 @@ accordion-header button:hover {
   background-color: #f9fafb;
 }
 /* end faq section */
+/* start contact section */
+.contact-icon i {
+  color: var(--main-font-color);
+  background-color: #863cff;
+  border-radius: 16px;
+  font-size: 35px;
+  width: fit-content;
+  padding: 16px;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.contact-data span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #101828;
+}
+
+.contact-data p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4a5565;
+}
+
+.contact-data a {
+  color: #7008e7;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.call-info,
+.email-info,
+.location-info,
+.chat-info {
+  border: 3px solid rgb(243, 244, 246);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.call-info:hover {
+  border-color: #863cff;
+}
+
+.email-info:hover {
+  border-color: #9f2afe;
+}
+
+.location-info:hover {
+  border-color: transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(135deg, #d83bbd 0%, #ee63a2 45%, #ff9547 100%) border-box;
+}
+
+.chat-info:hover {
+  border-color: #564afb;
+}
+
+.contact-box {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-box:hover {
+  transform: translateY(calc(var(--spacing) * -2));
+}
+
+.contact-box:hover .contact-icon i {
+  transform: scale(1.1);
+}
+
+.email-info a {
+  color: #7008e7;
+}
+
+.location-info a {
+  background: linear-gradient(135deg, #d83bbd 0%, #ee63a2 45%, #ff9547 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chat-info a {
+  color: #432dd7;
+}
+
+.email-info .contact-icon i {
+  background-color: #9f2afe;
+}
+
+.location-info .contact-icon i {
+  background: linear-gradient(135deg, #d83bbd 0%, #ee63a2 45%, #ff9547 100%);
+}
+
+.chat-info .contact-icon i {
+  background: #584efc;
+}
+
+.row.justify-content-center {
+  gap: 1.5rem;
+}
+/* end contact section */
 /* start footer */
 footer {
   background-color: #521796;
