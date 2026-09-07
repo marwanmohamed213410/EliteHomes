@@ -717,6 +717,48 @@ section#properties {
   background-color: rgba(255, 255, 255, 0.5);
 }
 /* end client stories section */
+/* start faq section */
+#faq .header-title {
+  color: #7f21fd;
+}
+
+#faq .accordion-item {
+  /* border: solid 1px; */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+#faq .accordion-header:hover,
+accordion-header button:hover {
+  background-color: #f9fafb;
+}
+
+#faq .accordion-body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #4a5565;
+}
+
+#faq .accordion-item .accordion-button {
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color:#101828;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f9fafb;
+}
+/* end faq section */
 
 /* start footer */
 footer {
