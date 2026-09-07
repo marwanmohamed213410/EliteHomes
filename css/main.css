@@ -70,6 +70,17 @@ body::selection {
   width: 60%;
 }
 
+.w-80 {
+  width: 80%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.py-20 {
+  padding-block: 70px;
+}
 .purble-border {
   background-color: #ede9fe;
   color: #7f22fe;
@@ -81,18 +92,18 @@ body::selection {
 }
 
 .light-purble-border {
-  background-color: #F3E8FF;
-  color: #9810FA;
+  background-color: #f3e8ff;
+  color: #9810fa;
 }
 
 .yellow-border {
-  background-color: #FEF9C2;
-  color: #D08700;
+  background-color: #fef9c2;
+  color: #d08700;
 }
 
 .blue-border {
-  background-color: #E0E7FF;
-  color: #4F39F6;
+  background-color: #e0e7ff;
+  color: #4f39f6;
 }
 
 .purble-btn {
@@ -124,7 +135,7 @@ body::selection {
 }
 
 .yellow-btn:hover {
-  background-color: #A65F00;
+  background-color: #a65f00;
   color: var(--main-font-color);
 }
 
@@ -135,7 +146,7 @@ body::selection {
 }
 
 .blue-btn:hover {
-  background-color: #432DD7;
+  background-color: #432dd7;
   color: var(--main-font-color);
 }
 
@@ -163,7 +174,7 @@ body::selection {
 .yellow-btn.btn:first-child:active,
 :not(.btn-check) + .btn:active {
   color: var(--main-font-color);
-  background-color: #A65F00;
+  background-color: #a65f00;
 }
 
 .blue-btn.btn-check:checked + .btn,
@@ -224,7 +235,7 @@ body::selection {
 }
 
 .navbar .nav-item .nav-link:hover {
-  color: var(--nav-active-color);
+  color: #7f22fe;
 }
 
 .nav-link.dropdown-toggle::after {
@@ -616,6 +627,96 @@ section#properties {
   color: oklch(0.446 0.03 256.802);
 }
 /* end services section */
+
+/* start client stories section */
+#testimonials {
+  background-color: #511796;
+}
+
+#testimonials .section-header .header-title,
+#testimonials .section-header .header-disc-section {
+  color: var(--main-font-color);
+}
+
+#testimonials .header-badge::before {
+  background: linear-gradient(to right, transparent, #f89469);
+}
+
+#testimonials .header-badge::after {
+  background: linear-gradient(to left, transparent, #f89469);
+}
+
+.rate i {
+  color: #ffb900;
+}
+
+.rate span {
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+  color: #4a5565;
+}
+
+.comment p {
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 20px;
+  color: #364153;
+}
+
+.user-details img {
+  width: 60px;
+  height: 60px;
+}
+
+.user-data h6 {
+  font-weight: 700;
+  color: #101828;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.user-data span {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+  color: oklch(0.446 0.03 256.802);
+}
+
+.user-data p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: oklch(0.551 0.027 264.364);
+}
+
+#testimonials .carousel-indicators [data-bs-target] {
+  width: calc(var(--spacing) * 3);
+  height: calc(var(--spacing) * 3);
+}
+
+#testimonials .carousel-indicators [data-bs-target]:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* end client stories section */
 
 /* start footer */
 footer {
