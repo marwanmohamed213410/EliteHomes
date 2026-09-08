@@ -217,7 +217,7 @@ a {
 }
 
 .navbar .nav-item .nav-link.active {
-  color: var(--nav-active-color);
+  color: #7f22fe;
 }
 
 .navbar .nav-item .nav-link.active {
